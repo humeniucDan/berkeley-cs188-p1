@@ -268,6 +268,17 @@ def euclideanHeuristic(position, problem, info={}):
     xy2 = problem.goal
     return ( (xy1[0] - xy2[0]) ** 2 + (xy1[1] - xy2[1]) ** 2 ) ** 0.5
 
+def centerHeuristic(position, problem, info={}):
+    xy1 = position
+    xy2 = problem.goal
+
+    problem
+
+    return abs(xy1[0] - xy2[0]) + abs(xy1[1] - xy2[1])
+
+def squaredHeuristic(position, problem, info={}):
+    return manhattanHeuristic(position, problem) ** 2
+
 #####################################################
 # This portion is incomplete.  Time to write code!  #
 #####################################################
